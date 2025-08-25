@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id" : 1,
+        "title": "alarmer",
+        "artist": "consev",
+        "coverpath": "/covers/ALARMER.png",
+        "songpath": "/songs/ALARMER.mp3"
+    }
+]
