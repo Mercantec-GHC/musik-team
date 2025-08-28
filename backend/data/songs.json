@@ -4,8 +4,8 @@
         "title": "alarmer",
         "artist": "consev",
         "length": 180,
-        "coverpath": "ALARMER.png",
-        "songpath": "ALARMER.mp3"
+        "cover": "ALARMER.png",
+        "file": "ALARMER.mp3"
     },
     
     {
