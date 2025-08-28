@@ -4,17 +4,17 @@
         "title": "alarmer",
         "artist": "consev",
         "length": 180,
-        "coverpath": "backend/covers/ALARMER.png",
-        "songpath": "backend/songs/ALARMER.mp3"
+        "coverpath": "ALARMER.png",
+        "songpath": "ALARMER.mp3"
     },
     
     {
-    "id": 0,
+    "id": 2,
     "title": "lullaby",
     "artist": "bennett",
     "length": 187,
-    "file": "backend/songs/BENNETT - Lullaby (Official Audio).mp3",
-    "cover": "backend/covers/lullaby.jpg"
+    "file": "BENNETT - Lullaby (Official Audio).mp3",
+    "cover": "lullaby.jpg"
   }
 
 ]
