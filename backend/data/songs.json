@@ -1,20 +1,42 @@
 [
-    {
-        "id" : 1,
-        "title": "alarmer",
-        "artist": "consev",
-        "length": 180,
-        "cover": "ALARMER.png",
-        "file": "ALARMER.mp3"
-    },
-    
-    {
+  {
+    "id": 1,
+    "title": "alarmer",
+    "artist": "consev",
+    "length": 180,
+    "cover": "ALARMER.png",
+    "file": "ALARMER.mp3"
+  },
+  {
     "id": 2,
     "title": "lullaby",
     "artist": "bennett",
     "length": 187,
     "file": "BENNETT - Lullaby (Official Audio).mp3",
     "cover": "lullaby.jpg"
+  },
+  {
+    "id": 3,
+    "title": "vois sur ton chemin",
+    "artist": "bennett",
+    "length": 178,
+    "file": "BENNETT - Vois sur ton chemin (Techno Mix) [Official Audio].mp3",
+    "cover": "vois sur ton chemin.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Armin van Buuren - Blah Blah Blah (Official Lyric Video)",
+    "artist": "Armin van Buuren",
+    "length": 194,
+    "file": "Armin van Buuren - Armin van Buuren - Blah Blah Blah Official Lyric Video.mp3",
+    "cover": "Armin van Buuren - Armin van Buuren - Blah Blah Blah Official Lyric Video.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Alfons - Don Dada",
+    "artist": "Alfons",
+    "length": 149,
+    "file": "Alfons - Alfons - Don Dada.mp3",
+    "cover": "Alfons - Alfons - Don Dada.jpg"
   }
-
 ]
