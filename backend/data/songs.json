@@ -38,5 +38,29 @@
     "length": 149,
     "file": "Alfons - Alfons - Don Dada.mp3",
     "cover": "Alfons - Alfons - Don Dada.jpg"
+  },
+  {
+    "id": 6,
+    "title": "tonight (feat. lutook)",
+    "artist": "consev - Topic",
+    "length": 210,
+    "file": "consev - Topic - tonight feat lutook.mp3",
+    "cover": "consev - Topic - tonight feat lutook.jpg"
+  },
+  {
+    "id": 7,
+    "title": "drømme (feat. lutook)",
+    "artist": "consev - Topic",
+    "length": 141,
+    "file": "consev - Topic - drømme feat lutook.mp3",
+    "cover": "consev - Topic - drømme feat lutook.jpg"
+  },
+  {
+    "id": 8,
+    "title": "phony (feat. lutook)",
+    "artist": "consev - Topic",
+    "length": 179,
+    "file": "consev - Topic - phony feat lutook.mp3",
+    "cover": "consev - Topic - phony feat lutook.jpg"
   }
 ]

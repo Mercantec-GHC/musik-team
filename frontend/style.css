@@ -16,21 +16,42 @@ header {
   align-items: center;
   gap: 1rem;
 }
+header h1 {
+  color: #00ffe7;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 8px #00ffe7,
+    0 0 16px #00ffe755,
+    0 0 32px #00ffe722;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 #search {
   width: 100%;
   max-width: 350px;
   padding: 0.6rem 1rem;
   border-radius: 20px;
-  border: none;
+  border: 2px solid #00ffe7; /* Neon cyan */
   background: #232323;
   color: #fff;
   font-size: 1rem;
   outline: none;
   margin-top: 0.5rem;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  box-shadow:
+    0 0 8px #00ffe7,
+    0 0 16px #00ffe755,
+    0 0 32px #00ffe722;
 }
+
 #search:focus {
-  box-shadow: 0 0 0 2px #1db95455;
+  box-shadow:
+    0 0 16px #ff00cc,
+    0 0 32px #ff00cc55,
+    0 0 48px #ff00cc22;
+  border-color: #ff00cc; /* Neon pink */
 }
 main {
   padding: 2rem;
@@ -87,16 +108,24 @@ main {
   flex-direction: column;
   align-items: center;
   position: relative;
-  border: 2px solid transparent;
+  border: 2px solid #00ffe7; /* Neon cyan */
+  box-shadow:
+    0 0 8px #00ffe7,
+    0 0 16px #00ffe755,
+    0 0 32px #00ffe722;
 }
 .song:hover {
   transform: scale(1.04);
   background: #282828;
-  box-shadow: 0 4px 16px #0008;
+  box-shadow:
+    0 0 16px #ff00cc,
+    0 0 32px #ff00cc55,
+    0 0 48px #ff00cc22;
+  border-color: #ff00cc; /* Neon pink */
 }
 .song.active {
   border: 2px solid #1500fd;
-  background: #062fd455;
+  background: #4b06c1;
 }
 .song img {
   width: 100%;
@@ -104,7 +133,20 @@ main {
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 8px #0005;
+  box-shadow:
+    0 0 8px #00ffe7,
+    0 0 16px #00ffe755,
+    0 0 32px #00ffe722;
+  border: 2px solid #00ffe7; /* Neon cyan */
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.song:hover img {
+  box-shadow:
+    0 0 16px #ff00cc,
+    0 0 32px #ff00cc55,
+    0 0 48px #ff00cc22;
+  border-color: #ff00cc; /* Neon pink */
 }
 .song-title {
   font-size: 1.1rem;
@@ -118,8 +160,13 @@ main {
   text-align: center;
 }
 .song-length {
-  color: #1db954;
-  font-size: 0.95rem;
+  color: #00ffe7;
+  text-shadow:
+    0 0 8px #00ffe7,
+    0 0 16px #00ffe755,
+    0 0 32px #00ffe722;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 #player {
   position: fixed;
@@ -245,24 +292,46 @@ main {
   font-size: 1rem;
 }
 #upload-form button[type="submit"] {
-  background: #1db954;
+  background: #181818;
   color: #fff;
-  border: none;
+  border: 2px solid #00ffe7; /* Neon cyan */
   border-radius: 20px;
   padding: 0.8rem 0;
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
   margin-top: 0.5rem;
-  transition: background 0.2s;
+  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s, transform 0.1s;
+  box-shadow:
+    0 0 8px #00ffe7,
+    0 0 16px #00ffe755,
+    0 0 32px #00ffe722;
 }
+
 #upload-form button[type="submit"]:hover {
-  background: #1ed760;
+  background: #282828;
+  border-color: #ff00cc; /* Neon pink */
+  box-shadow:
+    0 0 16px #ff00cc,
+    0 0 32px #ff00cc55,
+    0 0 48px #ff00cc22;
+  transform: scale(1.04);
+}
+
+#upload-form button[type="submit"]:active {
+  background: #0a0020;
+  border-color: #ffe600; /* Neon yellow */
+  box-shadow:
+    0 0 24px #ffe600,
+    0 0 48px #ff00cc,
+    0 0 80px #00ffe7;
+  color: #ffe600;
+  transform: scale(1.08);
 }
 #open-upload-modal {
-  background: #1db954; 
+  background: #181818;
   color: #fff;
-  border: none;
+  border: 2px solid #00ffe7; /* Neon cyan */
   border-radius: 20px;
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
@@ -270,15 +339,23 @@ main {
   cursor: pointer;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
-  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
-  box-shadow: 0 2px 8px rgb(32, 20, 197);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s, border-color 0.2s;
+  box-shadow:
+    0 0 8px #00ffe7,
+    0 0 16px #00ffe755,
+    0 0 32px #00ffe722;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
+
 #open-upload-modal:hover {
-  background: #1ed760;
-  box-shadow: 0 4px 16px #0007;
+  background: #282828;
+  border-color: #ff00cc; /* Neon pink */
+  box-shadow:
+    0 0 16px #ff00cc,
+    0 0 32px #ff00cc55,
+    0 0 48px #ff00cc22;
   transform: scale(1.04);
 }
 #open-upload-modal svg {
@@ -312,7 +389,12 @@ main {
 .modal-content {
   background: #232323;
   border-radius: 16px;
-  box-shadow: 0 8px 32px #000a;
+  box-shadow:
+    0 0 16px #00ffe7,
+    0 0 32px #00ffe755,
+    0 0 48px #00ffe722,
+    0 8px 32px #000a;
+  border: 2px solid #00ffe7; /* Neon cyan */
   padding: 2rem 2.5rem 2rem 2.5rem;
   position: relative;
   min-width: 320px;
@@ -343,6 +425,19 @@ main {
 }
 .close:hover {
   color: #1db954;
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7; /* Juster gennemsigtighed hvis ønsket */
+  pointer-events: none;
 }
 /* Skjul scrollbar i Chrome, Edge og Safari */
 body::-webkit-scrollbar,
