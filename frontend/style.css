@@ -124,8 +124,28 @@ main {
   border-color: #ff00cc; /* Neon pink */
 }
 .song.active {
-  border: 2px solid #1500fd;
-  background: #4b06c1;
+  border: 2px solid #00ffe7; /* Neon cyan */
+  background: #181818;
+  box-shadow:
+    0 0 24px #00ffe7,
+    0 0 48px #00ffe755,
+    0 0 80px #00ffe722;
+}
+.song.active .song-title,
+.song.active .song-artist,
+.song.active .song-length {
+  color: #00ffe7;
+  text-shadow:
+    0 0 8px #00ffe7,
+    0 0 16px #00ffe755,
+    0 0 32px #00ffe722;
+}
+.song.active img {
+  border-color: #00ffe7;
+  box-shadow:
+    0 0 24px #00ffe7,
+    0 0 48px #00ffe755,
+    0 0 80px #00ffe722;
 }
 .song img {
   width: 100%;
