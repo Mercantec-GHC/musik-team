@@ -194,14 +194,17 @@ main {
   right: 0;
   bottom: 0;
   background: #181818;
-  border-top: 1px solid #222;
+  border-top: 2px solid #00ffe7; /* Neon cyan */
   display: flex;
   align-items: center;
   padding: 0.7rem 2rem;
   gap: 1rem;
   min-height: 70px;
   z-index: 10;
-  box-shadow: 0 -2px 12px #0007;
+  box-shadow:
+    0 -2px 24px #00ffe7,
+    0 -4px 48px #00ffe755,
+    0 -8px 80px #00ffe722;
 }
 #player-cover {
   width: 50px;
@@ -219,42 +222,52 @@ main {
   text-shadow: 0 1px 2px #000a;
 }
 #play-pause {
-  background: #1db954;
-  color: #fff;
-  border: none;
+  background: #00ffe7;
+  color: #181818;
+  border: 2px solid #ff00cc;
   border-radius: 50%;
   width: 48px;
   height: 48px;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px #0005;
+  box-shadow:
+    0 0 16px #00ffe7,
+    0 0 32px #ff00cc55;
 }
+
 #play-pause:hover {
-  background: #1ed760;
-  box-shadow: 0 4px 16px #0007;
-}
-#play-icon,
-#pause-icon {
-  pointer-events: none;
+  background: #ff00cc;
+  color: #fff;
+  border-color: #00ffe7;
+  box-shadow:
+    0 0 32px #ff00cc,
+    0 0 48px #00ffe7;
 }
 #seek-bar {
   flex: 2;
   margin: 0 1rem;
-  accent-color: #1db954;
-  height: 4px;
-  background: linear-gradient(90deg, #1db954 0%, #1ed760 100%);
-  border-radius: 2px;
+  accent-color: #00ffe7;
+  height: 6px;
+  background: linear-gradient(90deg, #00ffe7 0%, #ff00cc 100%);
+  border-radius: 3px;
+  box-shadow:
+    0 0 8px #00ffe7,
+    0 0 16px #ff00cc55;
 }
 #current-time,
 #duration {
   min-width: 48px;
   text-align: center;
   font-variant-numeric: tabular-nums;
-  color: #b3b3b3;
+  color: #00ffe7;
+  text-shadow:
+    0 0 8px #00ffe7,
+    0 0 16px #00ffe755;
+  font-weight: bold;
 }
 @media (max-width: 700px) {
   main {
